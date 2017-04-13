@@ -1,0 +1,214 @@
+extends ../layout
+
+block styles
+    link(href='assets/css/home.css', rel='stylesheet')
+    
+block content
+    //
+        Carousel
+        ==================================================
+    #myCarousel.carousel.slide(data-ride='carousel')
+        .carousel-inner(role='listbox')
+            .item.active
+                img.first-slide(src='./assets/img/banner.png', alt='First slide')
+                .container
+                    .carousel-caption
+                        h1 Horários de Cultos
+                        .col-md-3
+                            p
+                                strong Domingo:
+                                br
+                                |             	09:00 - Escola Bíblica Dominical
+                                br
+                                |              	19:00 - Culto de Louvor e Adoração
+                        .col-md-3
+                            p
+                                strong Terças-Feiras:
+                                br
+                                |              	19:30 - Culto de Estudo Bíblico
+                        .col-md-3
+                            p
+                                strong Quartas-Feiras:
+                                br
+                                |              	19:30 - Culto de Oração
+                        .col-md-3
+                            p
+                                strong Quintas-Feiras:
+                                br
+                                |              	19:00 - Culto de Louvor e Adoração
+    // /.carousel
+    // Main jumbotron for a primary marketing message or call to action
+    .jumbotron
+        .container
+            h1
+                img#hands-in-heart(src='./assets/img/hands-in-heart.png', alt='hands-in-heart', title='hands-in-heart')
+                | 			Venha nos fazer uma visita !
+    //
+        Marketing messaging and news
+        ==================================================
+    // Wrap the rest of the page in another container to center all the content.
+    .container.marketing
+        // START THE NEWS
+        .row.news-home
+            h1.title.border-red Notícias Recentes
+            .col-md-8
+                .row.featurette
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | First featurette heading.
+                            span.text-muted It'll blow your mind.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | Oh yeah, it's that good.
+                            span.text-muted See for yourself.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+            .col-md-4
+                .row.featurette
+                    .col-md-12
+                        h2.featurette-heading
+                            | First featurette heading.
+                            span.text-muted It'll blow your mind.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-12
+                        h2.featurette-heading
+                            | Oh yeah, it's that good.
+                            span.text-muted See for yourself.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-12
+                        h2.featurette-heading
+                            | And lastly, this one.
+                            span.text-muted Checkmate.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+    // /.container
+    // Main jumbotron for church agenda
+    .parallax
+        .container-fluid
+            .container
+                .row.events-home
+                    h1.title.border-yellow Calendário da Igreja
+                    .col-md-6
+                        .event-home
+                            .date
+                                span.day 26
+                                hr.date-divider
+                                span.month 12
+                            .content
+                                h2.event-heading
+                                    | And lastly, this one.
+                                    span.text-muted Checkmate.
+                                p.lead
+                                    | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                        hr.events-divider
+                    .col-md-6
+                        .event-home
+                            .date
+                                span.day 26
+                                hr.date-divider
+                                span.month 12
+                            .content
+                                h2.event-heading
+                                    | And lastly, this one.
+                                    span.text-muted Checkmate.
+                                p.lead
+                                    | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                        hr.events-divider
+                    .col-md-6
+                        .event-home
+                            .date
+                                span.day 26
+                                hr.date-divider
+                                span.month 12
+                            .content
+                                h2.event-heading
+                                    | And lastly, this one.
+                                    span.text-muted Checkmate.
+                                p.lead
+                                    | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                    .col-md-6
+                        .event-home
+                            .date
+                                span.day 26
+                                hr.date-divider
+                                span.month 12
+                            .content
+                                h2.event-heading
+                                    | And lastly, this one.
+                                    span.text-muted Checkmate.
+                                p.lead
+                                    | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+    .container
+        .col-md-6
+            .featurette-post(style="background-image: url('./assets/img/banner.png');")
+                .align-items-center
+                    .post-abstract
+                        h1.title.border-red Ultimo post
+                        h2.post-heading
+                            | First featurette heading.
+                            span.text-muted It'll blow your mind.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+        .col-md-6.featurette-posts
+            h1.title.border-red Posts Recentes
+            .row.featurette
+                .col-md-4
+                    img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+                .col-md-8
+                    h2.featurette-heading
+                        | First featurette heading.
+                        span.text-muted It'll blow your mind.
+                    p.lead
+                        | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                    a.read-more(href='#')
+                        | Continuar lendo
+                        img(src='./assets/img/long-arrow-right.svg')
+            hr.featurette-divider
+            .row.featurette
+                .col-md-4
+                    img.featurette-image.img-responsive.center-block(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+                .col-md-8
+                    h2.featurette-heading
+                        | Oh yeah, it's that good.
+                        span.text-muted See for yourself.
+                    p.lead
+                        | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                    a.read-more(href='#')
+                        | Continuar lendo
+                        img(src='./assets/img/long-arrow-right.svg')
+            hr.featurette-divider
+    // /END THE BLOG
