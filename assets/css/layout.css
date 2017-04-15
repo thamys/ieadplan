@@ -175,7 +175,7 @@ a:hover{
 /* Verse of the day */
 
 .verse-of-the-day{
-	margin: 0;
+	margin: 35px 0 0 0;
 }
 
 .verse-of-the-day h1.title{

@@ -2,12 +2,30 @@
 	color: #332a2a;
 }
 
-.footer-social-media > a {
-    background-color: yellow;
+.contact-social-media > a:first-of-type{
+    margin-right: 15px;
 }
 
-.footer-social-media > a > img {
-    color: red;
-    fill: red;
-    width: 48px;
+.contact-social-media > a#facebook-top{
+    background-color: #4267b2;
+    border-radius: 5px;
+    padding: 10px 4px 14px;
 }
+
+
+.contact-social-media > a#youtube-top{
+    background-color: #cc181e;
+    border-radius: 5px;
+    padding: 13px 4px 15px;
+}
+
+.contact-social-media > a > img {
+    width: 36px;
+    /*transition: width 0,1s;*/
+}
+/*
+.contact-social-media > a > img:hover {
+    width: 60px;
+    transition: width 0.1s;
+}
+*/

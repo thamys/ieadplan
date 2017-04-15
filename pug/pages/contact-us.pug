@@ -8,32 +8,48 @@ block content
         // START THE FEATURETTES
         .row
             h1.title.border-yellow Contato
-            .col-md-12.text
-                p
+            .col-md-12.text.text-justify
+                 p
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                p
-                    | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            .col-md-6.contact-info
-                h3.title
-                    span.border-yellow Entre em Contato
-                    .text-right
-                        p
-                            strong Endereço:
-                            br
-                            | 					Rua Florinda Marques, 25, Planalto,
-                            | 					Muriaé - MG
-                        p
-                            strong Telefone:
-                            br
-                            | 					(32) 3232-4545
-                        p
-                            strong Redes Sociais
-                            br
-                            .footer-social-media
-                                a#facebook-top(href='#')
-                                    img(src='./assets/img/facebook.svg')
-                                a#youtube-top(href='#')
-                                    img(src='./assets/img/youtube.svg')
             .col-md-6
-                img.featurette-image.img-responsive.center-block(data-src='holder.js/500x270/auto', alt='Generic placeholder image')
+                p
+                    strong Visite-nos:
+                #map
+                    iframe(
+                        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.3423217239061!2d-42.376474970795435!3d-21.137692799121208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbcc6149ace26a5%3A0xf021584a685efd8!2sR.+Camilo+Martins+da+Silva%2C+284%2C+Muria%C3%A9+-+MG%2C+36880-000!5e0!3m2!1spt-PT!2sbr!4v1492297673599', 
+                        width='100%', 
+                        height='250', 
+                        frameborder='0', 
+                        style='border:0', 
+                        allowfullscreen='')
+                p
+                    strong ou ligue:
+                    br
+                    | (32) 3232-4545
+                p
+                    strong Siga-nos nas redes sociais
+                    br
+                    .contact-social-media
+                        a#facebook-top(href='#')
+                            img(src='./assets/img/facebook.svg')
+                        a#youtube-top(href='#')
+                            img(src='./assets/img/youtube.svg')
+            .col-md-6
+                form
+                    .form-group
+                        label(for='name') Nome
+                        input#name.form-control(type='text', placeholder='Seu nome')
+                    .form-group
+                        label(for='email') Email
+                        input#email.form-control(type='email', placeholder='Email')
+                    .form-group
+                        label(for='phone_number') Telefone para contato
+                        input#phone_number.form-control(type='tel', placeholder='Telefone ou Celular')
+                    .form-group
+                        label(for='subject') Assunto
+                        input#subject.form-control(type='text', placeholder='Assunto da Mensagem')
+                    .form-group
+                        label(for='message') Mensagem
+                        textarea#message.form-control
+                    button.btn.btn-primary.pull-right(type='submit') Submit
     // /.container
