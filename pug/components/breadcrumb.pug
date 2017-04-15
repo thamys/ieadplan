@@ -1,0 +1,11 @@
+mixin  breadcrumb(links)
+    .breadcrumb
+        ul.container.breadcrumb
+            li
+                a(href='index.html') Home
+            each link in links
+                if link.active
+                    li.active= link.name
+                else
+                    li
+                        a(href=link.url)= link.name

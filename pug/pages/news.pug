@@ -4,6 +4,11 @@ block styles
     link(href='assets/css/news.css', rel='stylesheet')
     
 block content
+    include ../components/breadcrumb
+    - var breadcrumb = [];
+    - breadcrumb.push({name: "Notícias", link: "news.html", active: true})
+    +breadcrumb(breadcrumb)
+
     .container
         // START THE FEATURETTES
         .row
@@ -114,3 +119,5 @@ block content
                             | Continuar lendo
                             img(src='./assets/img/long-arrow-right.svg')
                 hr.featurette-divider
+
+        include ../components/pagination

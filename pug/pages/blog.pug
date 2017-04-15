@@ -1,14 +1,119 @@
 extends ../layout
 
 block styles
-    link(href='assets/css/contact-us.css', rel='stylesheet')
+    link(href='assets/css/blog.css', rel='stylesheet')
     
 block content
+    include ../components/breadcrumb
+    - var breadcrumb = [];
+    - breadcrumb.push({name: "Blog", link: "blog.html", active: true})
+    +breadcrumb(breadcrumb)
+
     .container
         // START THE FEATURETTES
         .row
             h1.title.border-yellow Blog
-            .col-md-12.text
-                h2.title.inner-title.border-yellow Página em Construção
-                p
-                    | Desculpe o transtorno, ainda estmos construindo esse site e em breve as páginas estarão disponíveis
+            .col-md-8
+                .row.featurette.mt-10
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x430/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | First featurette heading.
+                            span.text-muted It'll blow your mind.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x430/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | Oh yeah, it's that good.
+                            span.text-muted See for yourself.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x430/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | Oh yeah, it's that good.
+                            span.text-muted See for yourself.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+                hr.featurette-divider
+                .row.featurette
+                    .col-md-5
+                        img.featurette-image.img-responsive.center-block(data-src='holder.js/500x430/auto', alt='Generic placeholder image')
+                    .col-md-7
+                        h2.featurette-heading
+                            | Oh yeah, it's that good.
+                            span.text-muted See for yourself.
+                        p.lead
+                            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        a.read-more(href='#')
+                            | Continuar lendo
+                            img(src='./assets/img/long-arrow-right.svg')
+            .col-md-4
+                .sidebar
+                    .categories
+                        h2.title.border-red Categorias
+                        ul.nav.nav-pills.nav-stacked
+                            li 
+                                a(href="#") Mensagens do Pastor
+                            li 
+                                a(href="#") Mocidade Ativa
+                            li 
+                                a(href="#") Casamento Blindado
+                    .archives
+                        h2.title.border-red Arquivo
+                        ul.nav.nav-pills.nav-stacked
+                            li 
+                                a(href="#") Março (20)
+                            li 
+                                a(href="#") Fevereiro (40)
+                            li 
+                                a(href="#") Janeiro (32)
+                            li 
+                                a(href="#") Anteriores (+200)
+                    .comments
+                        h2.title.border-red Comentários
+                        .comments-list
+                            .comment
+                                blockquote.blockquote 
+                                    p.mb-0 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                    footer.blockquote-footer
+                                        | Comentário em: &nbsp;
+                                        a(href="#") Como agradar a Deus? &nbsp;
+                                        | por &nbsp;
+                                        cite(title="Paloma Almeida") Paloma Almeida
+                            .comment
+                                blockquote.blockquote 
+                                    p.mb-0 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                    footer.blockquote-footer
+                                        | Comentário em: &nbsp;
+                                        a(href="#") Como agradar a Deus? &nbsp;
+                                        | por &nbsp;
+                                        cite(title="Paloma Almeida") Paloma Almeida
+                            .comment
+                                blockquote.blockquote 
+                                    p.mb-0 Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                                    footer.blockquote-footer
+                                        | Comentário em: &nbsp;
+                                        a(href="#") Como agradar a Deus? &nbsp;
+                                        | por &nbsp;
+                                        cite(title="Paloma Almeida") Paloma Almeida
+                                
+
+        include ../components/pagination
