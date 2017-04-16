@@ -29,3 +29,9 @@
     transition: width 0.1s;
 }
 */
+
+.schedule-of-worship .four-colums {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+}

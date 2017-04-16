@@ -1,14 +1,48 @@
 extends ../layout
 
 block styles
-    link(href='assets/css/contact-us.css', rel='stylesheet')
+    link(href='assets/css/events-details.css', rel='stylesheet')
     
 block content
+    include ../components/breadcrumb
+    - var breadcrumb = [];
+    - breadcrumb.push({name: "Eventos", link: "events.html", active: false})
+    - breadcrumb.push({name: "Festa das Mulheres", link: "event-details.html", active: true})
+    +breadcrumb(breadcrumb)
     .container
         // START THE FEATURETTES
         .row
-            h1.title.border-yellow Eventos - Detalhes do Evento
-            .col-md-12.text
-                h2.title.inner-title.border-yellow Página em Construção
-                p
-                    | Desculpe o transtorno, ainda estmos construindo esse site e em breve as páginas estarão disponíveis
+            h1.title.border-yellow Festa das Mulheres
+            .col-md-12
+                .event-details.text.two-columns
+                    h3 
+                        strong Data:&nbsp;
+                        span 25/05/2017
+                    h3 
+                        strong Local:&nbsp;
+                        span Assembléia de Deus de Muriaé no Planalto - Ministério de Madureira
+                    h3 
+                        strong Valor:&nbsp;
+                        span Não será cobrado
+                    h3 
+                        strong OBS:&nbsp;
+                        span Ir com o coração disposto a adorar a Deus
+                .col-md-6.image-column
+                    img.img-responsive(src='assets/img/banner.png')
+                .text
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    h4 Ut enim ad minim veniam
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    h3 Ut enim ad minim veniam
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                p
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    h4 Ut enim ad minim veniam
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    // /.container

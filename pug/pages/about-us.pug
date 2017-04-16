@@ -4,6 +4,11 @@ block styles
     link(href='assets/css/about-us.css', rel='stylesheet')
     
 block content
+    include ../components/breadcrumb
+    - var breadcrumb = [];
+    - breadcrumb.push({name: "A Igreja", link: "about-us.html", active: true})
+    +breadcrumb(breadcrumb)
+
     .container
         // START THE FEATURETTES
         .row
